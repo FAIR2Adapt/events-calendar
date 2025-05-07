@@ -1,61 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
   <title>Events Calendar</title>
-  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px 10px;
+      margin: 40px;
+      padding: 0;
+      background-color: #f4f4f4;
     }
+
     #calendar {
       max-width: 900px;
       margin: 0 auto;
-    }
-    .legend-box {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      margin-right: 6px;
-    }
-    #legend {
-      margin: 20px 0;
-      padding: 10px;
-      background: #f4f4f4;
+      background-color: white;
+      padding: 20px;
       border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
-    #legend h3 {
-      margin-top: 0;
+
+    #legend {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .legend-item {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: white;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <h1>Events Calendar</h1>
-  <div id="legend">
-    <h3>Event Types</h3>
-    <ul>
-      <li><span class="legend-box" style="background-color: blue;"></span> Workshop</li>
-      <li><span class="legend-box" style="background-color: green;"></span> Conference</li>
-      <li><span class="legend-box" style="background-color: purple;"></span> Publication</li>
-    </ul>
-  </div>
+
+  <h1 style="text-align: center;">Events Calendar</h1>
+
   <div id="calendar"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+  <div id="legend">
+    <strong>Event Type Legend:</strong>
+    <div style="margin-top: 10px;">
+      <span class="legend-item" style="background-color: #1f77b4;">Workshop</span>
+      <span class="legend-item" style="background-color: #ff7f0e;">Training event</span>
+      <span class="legend-item" style="background-color: #2ca02c;">Conference</span>
+      <span class="legend-item" style="background-color: #d62728;">Tutorial</span>
+      <span class="legend-item" style="background-color: #9467bd;">Demo</span>
+      <span class="legend-item" style="background-color: #17becf;">Webinar</span>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var calendarEl = document.getElementById('calendar');
-      
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
-        events: 'events.json'  // Make sure events.json is in the same folder
-      });
-
-      calendar.render();
+      fetch('events.json')
+        .then(response => response.json())
+        .then(events => {
+          const calendarEl = document.getElementById('calendar');
+          const calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            headerToolbar: {
+              left: 'prev,next today',
+              center: 'title',
+              right: 'dayGridMonth,timeGridWeek,listMonth'
+            },
+            events: events,
+            eventDisplay: 'block'
+          });
+          calendar.render();
+        })
+        .catch(error => {
+          console.error("Error loading events.json:", error);
+        });
     });
   </script>
+
 </body>
 </html>
 

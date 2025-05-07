@@ -2,62 +2,67 @@ import csv
 import json
 from datetime import datetime, timedelta
 
-# Map event types to colors
-TYPE_COLORS = {
-    "Workshop": "blue",
-    "Webinar": "orange",
-    "Training event": "green",
-    "Conference": "red",
-    "Publication": "purple",
-    "Other": "gray"
+# Mapping of event types to colors
+type_colors = {
+    "Workshop": "#1f77b4",
+    "Training event": "#ff7f0e",
+    "Conference": "#2ca02c",
+    "Tutorial": "#d62728",
+    "Demo": "#9467bd",
+    "Webinar": "#17becf"
 }
 
 def parse_date(date_str):
-    """Convert 'dd/mm/yyyy' to 'yyyy-mm-dd'."""
-    try:
-        return datetime.strptime(date_str.strip(), "%d/%m/%Y").date().isoformat()
-    except ValueError:
-        return None
-
-def get_color(activity_type):
-    return TYPE_COLORS.get(activity_type.strip(), TYPE_COLORS["Other"])
+    for fmt in ("%d/%m/%Y", "%Y-%m-%d"):
+        try:
+            return datetime.strptime(date_str, fmt).date()
+        except ValueError:
+            continue
+    return None
 
 events = []
-
-with open("input.csv", newline='', encoding='utf-8') as csvfile:
+with open('input.csv', newline='', encoding='utf-8') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         start = parse_date(row["Start date"])
         end = parse_date(row["End date"])
-        if not start:
-            continue  # Skip invalid rows
 
-        # FullCalendar requires end date to be exclusive for multi-day events
-        if start == end or not end:
-            event_end = start
+        if not start:
+            continue
+
+        # Add one day to end if different from start (FullCalendar is exclusive)
+        if end and end > start:
+            end = end + timedelta(days=1)
         else:
-            event_end = (datetime.strptime(end, "%Y-%m-%d").date() + timedelta(days=1)).isoformat()
+            end = start
+
+        title_parts = [
+            row["Activity name (event, publication, tutorial, news article, etc.)"],
+            f"({row['Type of activity']})" if row["Type of activity"] else "",
+            f"- {row['Partner']}" if row["Partner"] else "",
+            f"\nLocation: {row['Location (city)']}, {row['Location (country)']}" if row["Location (city)"] or row["Location (country)"] else "",
+            f"\nSpeaker/Participant: {row['Speaker / Participant / Organiser']}" if row["Speaker / Participant / Organiser"] else "",
+            f"\nAudience: {row['Audience size']}" if row["Audience size"] else "",
+            f"\nEvidence: {row['Evidence']}" if row["Evidence"] else "",
+            f"\nNotes: {row['Notes']}" if row["Notes"] else ""
+        ]
+        title = "\n".join(part for part in title_parts if part)
+
+        # Get color based on first label
+        first_type = row["Type of activity"].split(",")[0].strip()
+        color = type_colors.get(first_type, "#888")  # Default gray
 
         event = {
-            "title": row['Activity name (event, publication, tutorial, news article, etc.)'].strip(),
-            "start": start,
-            "end": event_end,
-            "backgroundColor": get_color(row["Type of activity"]),
-            "extendedProps": {
-                "partner": row["Partner"],
-                "role": row["Speaker / Participant / Organiser"],
-                "type": row["Type of activity"],
-                "status": row["Status"],
-                "location": f"{row['Location (city)']} ({row['Location (country)']})",
-                "audienceSize": row["Audience size"],
-                "evidence": row["Evidence"],
-                "notes": row["Notes"]
-            }
+            "title": title.strip(),
+            "start": start.isoformat(),
+            "end": end.isoformat(),
+            "color": color
         }
         events.append(event)
 
-# Write to JSON file
-with open("events.json", "w", encoding='utf-8') as jsonfile:
+# Write to events.json
+with open('events.json', 'w', encoding='utf-8') as jsonfile:
     json.dump(events, jsonfile, indent=2, ensure_ascii=False)
 
-print(f"Successfully wrote {len(events)} events to events.json")
+print(f" {len(events)} events written to events.json")
+

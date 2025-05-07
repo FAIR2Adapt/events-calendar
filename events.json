@@ -1,42 +1,642 @@
 [
   {
-    "title": "AI for EO Workshop",
-    "start": "2025-06-01",
-    "end": "2025-06-02",
+    "title": "1st Workshop for the Biscayan RiOMar Case Study",
+    "start": "2025-01-16",
+    "end": "2025-01-20",
     "backgroundColor": "blue",
     "extendedProps": {
-      "partner": "FAIR2Adapt",
-      "role": "Speaker",
-      "location": "Brussels, Belgium",
-      "audienceSize": 100,
-      "notes": "Keynote speech on FAIR data"
+      "partner": "IFREMER",
+      "role": "Tina Odaka",
+      "type": "Workshop",
+      "status": "Delivered",
+      "location": "Geilo (Norway)",
+      "audienceSize": "6",
+      "evidence": "Agenda and minutes from the event",
+      "notes": ""
     }
   },
   {
-    "title": "Tech for Earth Conference",
-    "start": "2025-07-10",
-    "end": "2025-07-12",
+    "title": "Reborn article webinar",
+    "start": "2025-02-13",
+    "end": "2025-02-13",
+    "backgroundColor": "orange",
+    "extendedProps": {
+      "partner": "TIB",
+      "role": "Lauren Snyder/Markus Stocker",
+      "type": "Webinar",
+      "status": "Delivered",
+      "location": "Online ()",
+      "audienceSize": "25",
+      "evidence": "",
+      "notes": ""
+    }
+  },
+  {
+    "title": "1st I-ADOPT Modelling Workshop",
+    "start": "2025-02-20",
+    "end": "2025-02-22",
+    "backgroundColor": "blue",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Barbara Magagna",
+      "type": "Workshop",
+      "status": "Delivered",
+      "location": "Vienna (Austria)",
+      "audienceSize": "18",
+      "evidence": "Agenda and minutes from the event",
+      "notes": "18 participants"
+    }
+  },
+  {
+    "title": "FA.7.W.1 | FAIR Awareness event for FAIR2Adapt",
+    "start": "2025-02-27",
+    "end": "2025-02-27",
     "backgroundColor": "green",
     "extendedProps": {
-      "partner": "EarthTech",
-      "role": "Participant",
-      "location": "Paris, France",
-      "audienceSize": 150,
-      "notes": "Panel discussion on AI"
+      "partner": "GFF",
+      "role": "Erik Schultes/Barbara Magagna",
+      "type": "Training event",
+      "status": "Delivered",
+      "location": "Online (Online)",
+      "audienceSize": "???",
+      "evidence": "https://w3id.org/np/RA1EUug5ppYMnee_IyhKnXVMTubHplB-Bkcqcw0hEyWwo ",
+      "notes": "Nanopublications declaring the first delivery of the course along with nanopublications for the participation attendance."
     }
   },
   {
-    "title": "Open Data in Science",
-    "start": "2025-08-15",
-    "end": "2025-08-16",
-    "backgroundColor": "purple",
+    "title": "1st Workshop for the City of Hambug Case Study",
+    "start": "2025-03-04",
+    "end": "2025-03-04",
+    "backgroundColor": "blue",
     "extendedProps": {
-      "partner": "OpenScience",
-      "role": "Author",
-      "location": "Online",
-      "audienceSize": 50,
-      "notes": "Research paper published"
+      "partner": "UHAM",
+      "role": "Malte von Szombathely",
+      "type": "Workshop",
+      "status": "Delivered",
+      "location": "Hamburg (Germany)",
+      "audienceSize": "10",
+      "evidence": "Agenda and minutes from the event",
+      "notes": ""
+    }
+  },
+  {
+    "title": "2nd I-ADOPT Modelling Workshop",
+    "start": "2025-03-10",
+    "end": "2025-03-12",
+    "backgroundColor": "blue",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Barbara Magagna",
+      "type": "Workshop",
+      "status": "Delivered",
+      "location": "Vienna (Austria)",
+      "audienceSize": "17",
+      "evidence": "Agenda and minutes from the event",
+      "notes": "17 participants"
+    }
+  },
+  {
+    "title": "1st Workshop for the Arctic Radioisotope Case Study",
+    "start": "2025-03-18",
+    "end": "2025-03-21",
+    "backgroundColor": "blue",
+    "extendedProps": {
+      "partner": "NERSC",
+      "role": "Yanchun He",
+      "type": "Workshop",
+      "status": "Delivered",
+      "location": "Bødo (Norway)",
+      "audienceSize": "12",
+      "evidence": "Agenda and minutes from the event",
+      "notes": "The case study workshop was part of the Arctic Emergency Management Conference. Responding to emerging challenges and risks"
+    }
+  },
+  {
+    "title": "FA.8.T.1 | FAIR2Adapt FAIR Awareness session 1",
+    "start": "2025-03-31",
+    "end": "2025-03-31",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Erik Schultes/Andrea Tarallo",
+      "type": "Training event",
+      "status": "Delivered",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "https://w3id.org/np/RA1EUug5ppYMnee_IyhKnXVMTubHplB-Bkcqcw0hEyWwo ",
+      "notes": "Nanopublications declaring the first delivery of the course along with nanopublications for the participation attendance."
+    }
+  },
+  {
+    "title": "FAIR Awareness: FAIR Principles",
+    "start": "2025-04-08",
+    "end": "2025-04-08",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Erik/Gerhard",
+      "type": "Training event",
+      "status": "Delivered",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "CORP Conference: Accelerating Climate Change Adaptation in Cities with FAIR2Adapt: FAIRifying Hamburg's Risk Map",
+    "start": "2025-04-14",
+    "end": "2025-04-17",
+    "backgroundColor": "red",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Barbara Magagna",
+      "type": "Conference",
+      "status": "Delivered",
+      "location": "Graz (Austria)",
+      "audienceSize": "??",
+      "evidence": "Programme: https://www.corp.at/Download/CORP2025/realcorp2025programme.pdf",
+      "notes": "30th International Conference on Urban Planning and Regional Development in the Information Society (CORP): https://www.corp.at"
+    }
+  },
+  {
+    "title": "FAIR Awareness: Good FAIR practices",
+    "start": "2025-04-17",
+    "end": "2025-04-17",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Barbara/Raul",
+      "type": "Training event",
+      "status": "Delivered",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "FAIR Awareness: FAIR Assessment",
+    "start": "2025-04-22",
+    "end": "2025-04-22",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Barbara/Gerhard",
+      "type": "Training event",
+      "status": "Delivered",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "EGU2025: FAIR2Adapt: Advancing Climate Change Adaptation Strategies through FAIR and open;data sharing and Research Infrastructures (talk)",
+    "start": "2025-04-28",
+    "end": "2025-04-28",
+    "backgroundColor": "red",
+    "extendedProps": {
+      "partner": "SRL",
+      "role": "Anne Fouilloux",
+      "type": "Conference",
+      "status": "Ongoing",
+      "location": "Vienna (Austria)",
+      "audienceSize": "??",
+      "evidence": "https://doi.org/10.5194/egusphere-egu25-5215 ",
+      "notes": ""
+    }
+  },
+  {
+    "title": "FAIR Awareness: FAIR Data Stewardship",
+    "start": "2025-04-28",
+    "end": "2025-04-28",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Barbara/Andrea",
+      "type": "Training event",
+      "status": "Ongoing",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "EGU2025, only participant",
+    "start": "2025-04-28",
+    "end": "2025-05-01",
+    "backgroundColor": "red",
+    "extendedProps": {
+      "partner": "FTC",
+      "role": "Christine Matauschek",
+      "type": "Conference",
+      "status": "Ongoing",
+      "location": "Vienna (Austria)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "EGU 2025: Visualizing a climate and disaster resilience taxonomy from research evidence: scaling and accelerating knowledge interoperability",
+    "start": "2025-04-29",
+    "end": "2025-04-29",
+    "backgroundColor": "red",
+    "extendedProps": {
+      "partner": "SEI",
+      "role": "Rosie Witton (on behalf of Sukaina Bharwani)",
+      "type": "Conference",
+      "status": "Ongoing",
+      "location": "Vienna (Austria)",
+      "audienceSize": "",
+      "evidence": "https://doi.org/10.5194/egusphere-egu25-18822  ",
+      "notes": ""
+    }
+  },
+  {
+    "title": "EGU2025: Estimated Transport of Atlantic Water to the Arctic Ocean Using Observed and Simulated Radionuclides",
+    "start": "2025-04-30",
+    "end": "2025-04-30",
+    "backgroundColor": "red",
+    "extendedProps": {
+      "partner": "NERSC",
+      "role": "Yanchun He",
+      "type": "Conference",
+      "status": "Ongoing",
+      "location": "Vienna (Austria)",
+      "audienceSize": "??",
+      "evidence": "https://doi.org/10.5194/egusphere-egu25-13327 ",
+      "notes": ""
+    }
+  },
+  {
+    "title": "EGU2025: Building an EOSC based virtual research environment to support the adoption of FAIR and Open Science practices in Climate Change Adaptation communities (talk)",
+    "start": "2025-04-30",
+    "end": "2025-04-30",
+    "backgroundColor": "red",
+    "extendedProps": {
+      "partner": "PSNC",
+      "role": "Adam Rynkiewicz/Raul Palma",
+      "type": "Conference",
+      "status": "Ongoing",
+      "location": "Vienna (Austria)",
+      "audienceSize": "??",
+      "evidence": "https://doi.org/10.5194/egusphere-egu25-19699",
+      "notes": ""
+    }
+  },
+  {
+    "title": "ESSI3.2 - One decade of FAIR Principles:  Data Reusability and Impact in Earth System Sciences",
+    "start": "2025-04-30",
+    "end": "2025-04-30",
+    "backgroundColor": "red",
+    "extendedProps": {
+      "partner": "Expert.ai",
+      "role": "José Manuel Gómez-Pérez",
+      "type": "Conference",
+      "status": "Ongoing",
+      "location": "Vienna (Austria)",
+      "audienceSize": "??",
+      "evidence": "https://doi.org/10.5194/egusphere-egu25-20123",
+      "notes": ""
+    }
+  },
+  {
+    "title": "EGU 2025: Escaping from the 1600s: Advancing FAIR scientific knowledge with reborn articles",
+    "start": "2025-04-30",
+    "end": "2025-04-30",
+    "backgroundColor": "red",
+    "extendedProps": {
+      "partner": "TIB",
+      "role": "Lauren Snyder",
+      "type": "Conference",
+      "status": "Ongoing",
+      "location": "Vienna (Austria)",
+      "audienceSize": "??",
+      "evidence": "https://doi.org/10.5194/egusphere-egu25-4203 ",
+      "notes": ""
+    }
+  },
+  {
+    "title": "EGU 2025: Climate Extremes and Risk: Connecting Climate Science and Decision-Making via Interdisciplinary Approaches Focusing on Climate Impacts",
+    "start": "2025-04-30",
+    "end": "2025-04-30",
+    "backgroundColor": "red",
+    "extendedProps": {
+      "partner": "UHAM",
+      "role": "Jana Sillmann",
+      "type": "Conference",
+      "status": "Ongoing",
+      "location": "Vienna (Austria)",
+      "audienceSize": "??",
+      "evidence": "https://doi.org/10.5194/egusphere-egu25-9881 ",
+      "notes": "Not FAIR2Adapt?"
+    }
+  },
+  {
+    "title": "EGU 2025: Hamburg Pluvial Flood Risk Map",
+    "start": "2025-04-30",
+    "end": "2025-04-30",
+    "backgroundColor": "red",
+    "extendedProps": {
+      "partner": "UHAM",
+      "role": "Malte von Szombathely",
+      "type": "Conference",
+      "status": "Ongoing",
+      "location": "Vienna (Austria)",
+      "audienceSize": "??",
+      "evidence": "https://doi.org/10.5194/egusphere-egu25-13534 ",
+      "notes": "Not FAIR2Adapt?"
+    }
+  },
+  {
+    "title": "EGU 2025: Short Course: Harnessing the Power of Pangeo: Enhancing Your Scientific Data Analysis Workflow with scalable open source tools",
+    "start": "2025-05-01",
+    "end": "2025-05-01",
+    "backgroundColor": "gray",
+    "extendedProps": {
+      "partner": "IFREMER",
+      "role": "Tina Odaka, Anne Fouilloux",
+      "type": "Training event, Conference",
+      "status": "Ongoing",
+      "location": "Vienna (Austria)",
+      "audienceSize": "??",
+      "evidence": "https://meetingorganizer.copernicus.org/EGU25/session/53638 , https://github.com/pangeo-data/egu-2025-course  ",
+      "notes": ""
+    }
+  },
+  {
+    "title": "EGU2025: Seamless transitioning between HPC and cloud in support of Earth Observation, Earth Modeling and community-driven Geoscience approach PANGEO (session convener)",
+    "start": "2025-05-02",
+    "end": "2025-05-02",
+    "backgroundColor": "red",
+    "extendedProps": {
+      "partner": "IFREMER",
+      "role": "Tina Odaka, Anne Fouilloux",
+      "type": "Conference",
+      "status": "Ongoing",
+      "location": "Vienna (Austria)",
+      "audienceSize": "??",
+      "evidence": "https://meetingorganizer.copernicus.org/EGU25/session/52079",
+      "notes": ""
+    }
+  },
+  {
+    "title": "EGU2025: Climate Modeling with Conda and Containers to Improve Computational Resource Usage while Achieving Native Performance and Reproducibility (poster)",
+    "start": "2025-05-02",
+    "end": "2025-05-02",
+    "backgroundColor": "red",
+    "extendedProps": {
+      "partner": "SRL",
+      "role": "Anne Fouilloux",
+      "type": "Conference",
+      "status": "Ongoing",
+      "location": "Vienna (Austria)",
+      "audienceSize": "??",
+      "evidence": "https://doi.org/10.5194/egusphere-egu25-2605 ",
+      "notes": ""
+    }
+  },
+  {
+    "title": "FIP: FAIR Implementation Profile",
+    "start": "2025-05-06",
+    "end": "2025-05-06",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Barbara/Erik",
+      "type": "Training event",
+      "status": "Ongoing",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "M4M: Metadata",
+    "start": "2025-05-08",
+    "end": "2025-05-08",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Erik/Andrea",
+      "type": "Training event",
+      "status": "Ongoing",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "FIP: FAIR Enabling Resources",
+    "start": "2025-05-12",
+    "end": "2025-05-12",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Barbara/Erik",
+      "type": "Training event",
+      "status": "Ongoing",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "M4M: FAIR Metadata",
+    "start": "2025-05-13",
+    "end": "2025-05-13",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Barbara/Gerhard",
+      "type": "Training event",
+      "status": "Ongoing",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "FIP: Nanopublications",
+    "start": "2025-05-20",
+    "end": "2025-05-20",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Gerhard/Andrea",
+      "type": "Training event",
+      "status": "Ongoing",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "M4M: Metadata standards",
+    "start": "2025-05-22",
+    "end": "2025-05-22",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Barbara/Andrea",
+      "type": "Training event",
+      "status": "Ongoing",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "FIP: Curation",
+    "start": "2025-05-27",
+    "end": "2025-05-27",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Gerhard/Barbara",
+      "type": "Training event",
+      "status": "Ongoing",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "M4M: CEDAR",
+    "start": "2025-05-28",
+    "end": "2025-05-28",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Barbara/Gerhard",
+      "type": "Training event",
+      "status": "Ongoing",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "M4M: Nanopublication templates",
+    "start": "2025-06-03",
+    "end": "2025-06-03",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Tobias/Barbara",
+      "type": "Training event",
+      "status": "Ongoing",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "FIP: Convergence",
+    "start": "2025-06-05",
+    "end": "2025-06-05",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Erik/Andrea",
+      "type": "Training event",
+      "status": "Ongoing",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "M4M: DSW Template",
+    "start": "2025-06-10",
+    "end": "2025-06-10",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Marek/Barbara",
+      "type": "Training event",
+      "status": "Ongoing",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "7th EUROPEAN CLIMATE CHANGE ADAPTATION CONFERENCE (ECCA2025)",
+    "start": "2025-06-16",
+    "end": "2025-06-19",
+    "backgroundColor": "gray",
+    "extendedProps": {
+      "partner": "FC.ID",
+      "role": "Ines/Tiago/Francisca",
+      "type": "Conference, Workshop",
+      "status": "Ongoing",
+      "location": "Rimini (Italy)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": "Session proposal \"FAIR data and Open Science in support of climate change adaptation\" has been accepted. This session is organised in collaboration with our sibling project CLIMATE-ADAPT4EOSC"
+    }
+  },
+  {
+    "title": "M4M: DTR Template",
+    "start": "2025-06-19",
+    "end": "2025-06-19",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Barbara/Gerhard",
+      "type": "Training event",
+      "status": "Ongoing",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "LPS25: Leveraging FAIR Digital Objects for Climate Change Adaptation: Building on Observation Frameworks",
+    "start": "2025-06-23",
+    "end": "2025-06-28",
+    "backgroundColor": "red",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Barbara Magagna",
+      "type": "Conference",
+      "status": "Ongoing",
+      "location": "Vienna (Austria)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
+    }
+  },
+  {
+    "title": "M4M: Mappings",
+    "start": "2025-06-24",
+    "end": "2025-06-24",
+    "backgroundColor": "green",
+    "extendedProps": {
+      "partner": "GFF",
+      "role": "Barbara/Andrea",
+      "type": "Training event",
+      "status": "Ongoing",
+      "location": "Online (Online)",
+      "audienceSize": "??",
+      "evidence": "???",
+      "notes": ""
     }
   }
 ]
-

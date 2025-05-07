@@ -1,0 +1,42 @@
+Start date,End date,Partner,Speaker / Participant / Organiser,Type of activity,"Activity name (event, publication, tutorial, news article, etc.)",Status,Location (city),Location (country),Audience size,Evidence,Notes
+16/01/2025,19/01/2025,IFREMER,Tina Odaka,Workshop,1st Workshop for the Biscayan RiOMar Case Study,Delivered,Geilo,Norway,6,Agenda and minutes from the event,
+13/02/2025,13/02/2025,TIB,Lauren Snyder/Markus Stocker,Webinar,Reborn article webinar,Delivered,Online,,25,,
+20/02/2025,21/02/2025,GFF,Barbara Magagna,Workshop,1st I-ADOPT Modelling Workshop,Delivered,Vienna,Austria,18,Agenda and minutes from the event,18 participants
+27/02/2025,27/02/2025,GFF,Erik Schultes/Barbara Magagna,Training event,FA.7.W.1 | FAIR Awareness event for FAIR2Adapt,Delivered,Online,Online,???,https://w3id.org/np/RA1EUug5ppYMnee_IyhKnXVMTubHplB-Bkcqcw0hEyWwo ,Nanopublications declaring the first delivery of the course along with nanopublications for the participation attendance.
+04/03/2025,04/03/2025,UHAM,Malte von Szombathely,Workshop,1st Workshop for the City of Hambug Case Study,Delivered,Hamburg,Germany,10,Agenda and minutes from the event,
+10/03/2025,11/03/2025,GFF,Barbara Magagna,Workshop,2nd I-ADOPT Modelling Workshop,Delivered,Vienna,Austria,17,Agenda and minutes from the event,17 participants
+18/03/2025,20/03/2025,NERSC,Yanchun He,Workshop,1st Workshop for the Arctic Radioisotope Case Study,Delivered,Bødo,Norway,12,Agenda and minutes from the event,The case study workshop was part of the Arctic Emergency Management Conference. Responding to emerging challenges and risks
+31/03/2025,31/03/2025,GFF,Erik Schultes/Andrea Tarallo,Training event,FA.8.T.1 | FAIR2Adapt FAIR Awareness session 1,Delivered,Online,Online,??,https://w3id.org/np/RA1EUug5ppYMnee_IyhKnXVMTubHplB-Bkcqcw0hEyWwo ,Nanopublications declaring the first delivery of the course along with nanopublications for the participation attendance.
+08/04/2025,08/04/2025,GFF,Erik/Gerhard,Training event,FAIR Awareness: FAIR Principles ,Delivered,Online,Online,??,???,
+14/04/2025,16/04/2025,GFF,Barbara Magagna,Conference,CORP Conference: Accelerating Climate Change Adaptation in Cities with FAIR2Adapt: FAIRifying Hamburg's Risk Map ,Delivered,Graz,Austria,??,Programme: https://www.corp.at/Download/CORP2025/realcorp2025programme.pdf,30th International Conference on Urban Planning and Regional Development in the Information Society (CORP): https://www.corp.at
+17/04/2025,17/04/2025,GFF,Barbara/Raul,Training event,FAIR Awareness: Good FAIR practices,Delivered,Online,Online,??,???,
+22/04/2025,22/04/2025,GFF,Barbara/Gerhard,Training event,FAIR Awareness: FAIR Assessment,Delivered,Online,Online,??,???,
+28/04/2025,28/04/2025,SRL,Anne Fouilloux,Conference,EGU2025: FAIR2Adapt: Advancing Climate Change Adaptation Strategies through FAIR and open;data sharing and Research Infrastructures (talk),Ongoing,Vienna,Austria,??,https://doi.org/10.5194/egusphere-egu25-5215 ,
+28/04/2025,28/04/2025,GFF,Barbara/Andrea,Training event,FAIR Awareness: FAIR Data Stewardship,Ongoing,Online,Online,??,???,
+28/04/2025,30/04/2025,FTC,Christine Matauschek,Conference,"EGU2025, only participant",Ongoing,Vienna,Austria,??,???,
+29/04/2025,29/04/2025,SEI,Rosie Witton (on behalf of Sukaina Bharwani),Conference,"EGU 2025: Visualizing a climate and disaster resilience taxonomy from research evidence: scaling and accelerating knowledge interoperability
+",Ongoing,Vienna,Austria,,https://doi.org/10.5194/egusphere-egu25-18822  ,
+30/04/2025,30/04/2025,NERSC,Yanchun He,Conference,EGU2025: Estimated Transport of Atlantic Water to the Arctic Ocean Using Observed and Simulated Radionuclides,Ongoing,Vienna,Austria,??,https://doi.org/10.5194/egusphere-egu25-13327 ,
+30/04/2025,30/04/2025,PSNC,Adam Rynkiewicz/Raul Palma,Conference,EGU2025: Building an EOSC based virtual research environment to support the adoption of FAIR and Open Science practices in Climate Change Adaptation communities (talk),Ongoing,Vienna,Austria,??,https://doi.org/10.5194/egusphere-egu25-19699,
+30/04/2025,30/04/2025,Expert.ai,José Manuel Gómez-Pérez,Conference,ESSI3.2 - One decade of FAIR Principles:  Data Reusability and Impact in Earth System Sciences,Ongoing,Vienna,Austria,??,https://doi.org/10.5194/egusphere-egu25-20123,
+30/04/2025,30/04/2025,TIB,Lauren Snyder,Conference,EGU 2025: Escaping from the 1600s: Advancing FAIR scientific knowledge with reborn articles,Ongoing,Vienna,Austria,??,https://doi.org/10.5194/egusphere-egu25-4203 ,
+30/04/2025,30/04/2025,UHAM,Jana Sillmann,Conference,EGU 2025: Climate Extremes and Risk: Connecting Climate Science and Decision-Making via Interdisciplinary Approaches Focusing on Climate Impacts,Ongoing,Vienna,Austria,??,https://doi.org/10.5194/egusphere-egu25-9881 ,Not FAIR2Adapt?
+30/04/2025,30/04/2025,UHAM,Malte von Szombathely,Conference,EGU 2025: Hamburg Pluvial Flood Risk Map,Ongoing,Vienna,Austria,??,https://doi.org/10.5194/egusphere-egu25-13534 ,Not FAIR2Adapt?
+01/05/2025,01/05/2025,IFREMER,"Tina Odaka, Anne Fouilloux","Training event, Conference",EGU 2025: Short Course: Harnessing the Power of Pangeo: Enhancing Your Scientific Data Analysis Workflow with scalable open source tools,Ongoing,Vienna,Austria,??,"https://meetingorganizer.copernicus.org/EGU25/session/53638 , https://github.com/pangeo-data/egu-2025-course  ",
+02/05/2025,02/05/2025,IFREMER,"Tina Odaka, Anne Fouilloux",Conference,"EGU2025: Seamless transitioning between HPC and cloud in support of Earth Observation, Earth Modeling and community-driven Geoscience approach PANGEO (session convener)",Ongoing,Vienna,Austria,??,https://meetingorganizer.copernicus.org/EGU25/session/52079,
+02/05/2025,02/05/2025,SRL,Anne Fouilloux,Conference,EGU2025: Climate Modeling with Conda and Containers to Improve Computational Resource Usage while Achieving Native Performance and Reproducibility (poster),Ongoing,Vienna,Austria,??,https://doi.org/10.5194/egusphere-egu25-2605 ,
+06/05/2025,06/05/2025,GFF,Barbara/Erik,Training event,FIP: FAIR Implementation Profile,Ongoing,Online,Online,??,???,
+08/05/2025,08/05/2025,GFF,Erik/Andrea,Training event,M4M: Metadata,Ongoing,Online,Online,??,???,
+12/05/2025,12/05/2025,GFF,Barbara/Erik,Training event,FIP: FAIR Enabling Resources,Ongoing,Online,Online,??,???,
+13/05/2025,13/05/2025,GFF,Barbara/Gerhard,Training event,M4M: FAIR Metadata,Ongoing,Online,Online,??,???,
+20/05/2025,20/05/2025,GFF,Gerhard/Andrea,Training event,FIP: Nanopublications,Ongoing,Online,Online,??,???,
+22/05/2025,22/05/2025,GFF,Barbara/Andrea,Training event,M4M: Metadata standards,Ongoing,Online,Online,??,???,
+27/05/2025,27/05/2025,GFF,Gerhard/Barbara,Training event,FIP: Curation,Ongoing,Online,Online,??,???,
+28/05/2025,28/05/2025,GFF,Barbara/Gerhard,Training event,M4M: CEDAR,Ongoing,Online,Online,??,???,
+03/06/2025,03/06/2025,GFF,Tobias/Barbara,Training event,M4M: Nanopublication templates,Ongoing,Online,Online,??,???,
+05/06/2025,05/06/2025,GFF,Erik/Andrea,Training event,FIP: Convergence,Ongoing,Online,Online,??,???,
+10/06/2025,10/06/2025,GFF,Marek/Barbara,Training event,M4M: DSW Template,Ongoing,Online,Online,??,???,
+16/06/2025,18/06/2025,FC.ID,Ines/Tiago/Francisca,"Conference, Workshop",7th EUROPEAN CLIMATE CHANGE ADAPTATION CONFERENCE (ECCA2025),Ongoing,Rimini,Italy,??,???,"Session proposal ""FAIR data and Open Science in support of climate change adaptation"" has been accepted. This session is organised in collaboration with our sibling project CLIMATE-ADAPT4EOSC"
+19/06/2025,19/06/2025,GFF,Barbara/Gerhard,Training event,M4M: DTR Template,Ongoing,Online,Online,??,???,
+23/06/2025,27/06/2025,GFF,Barbara Magagna,Conference,LPS25: Leveraging FAIR Digital Objects for Climate Change Adaptation: Building on Observation Frameworks ,Ongoing,Vienna,Austria,??,???,
+24/06/2025,24/06/2025,GFF,Barbara/Andrea,Training event,M4M: Mappings,Ongoing,Online,Online,??,???,

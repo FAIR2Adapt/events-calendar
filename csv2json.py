@@ -1,5 +1,6 @@
 import csv
 import json
+import re
 from datetime import datetime, timedelta
 
 # Mapping of event types to colors
@@ -37,29 +38,36 @@ with open('input.csv', newline='', encoding='utf-8') as csvfile:
             end = start
 
         title_parts = [
-            row["Activity name (event, publication, tutorial, news article, etc.)"],
             f"({row['Type of activity']})" if row["Type of activity"] else "",
-            f"- {row['Partner']}" if row["Partner"] else "",
             f"\nLocation: {row['Location (city)']}, {row['Location (country)']}" if row["Location (city)"] or row["Location (country)"] else "",
             f"\nSpeaker/Participant: {row['Speaker / Participant / Organiser']}" if row["Speaker / Participant / Organiser"] else "",
-            f"\nAudience: {row['Audience size']}" if row["Audience size"] else "",
-            f"\nEvidence: {row['Evidence']}" if row["Evidence"] else "",
-            f"\nNotes: {row['Notes']}" if row["Notes"] else ""
         ]
-        title = "\n".join(part for part in title_parts if part)
+        title = row["Activity name (event, publication, tutorial, news article, etc.)"]
+        description = ";".join(part for part in title_parts if part)
+        evidence = row['Evidence'] if row["Evidence"] else ""
+        url_start = evidence.find("http")
+        if url_start == -1:
+           url = "https://fair2adapt-eosc.eu"
+        else:
+            url_end = evidence[url_start:].find(" ")
+            url = evidence[url_start:url_end]
 
         # Get color based on first label
         first_type = row["Type of activity"].split(",")[0].strip()
         color = type_colors.get(first_type, "#888")  # Default gray
+        print(first_type, color)
 
         event = {
             "title": title.strip(),
             "start": start.isoformat(),
             "end": end.isoformat(),
-            "color": color
+            "description": description.strip(),
+            "url": url.strip(),
+            "type": first_type
         }
         events.append(event)
 
+events.sort(key=lambda e: e["start"])
 # Write to events.json
 with open('events.json', 'w', encoding='utf-8') as jsonfile:
     json.dump(events, jsonfile, indent=2, ensure_ascii=False)

@@ -6,19 +6,55 @@
   <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 40px;
-      padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    /* General styling for header buttons */
+    .fc .fc-button {
+      background-color: #1dc690;  /* Button background */
+      color: black;               /* Text color */
+      border: none;
+      padding: 6px 12px;
+      margin: 2px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    /* Hover effect */
+    .fc .fc-button:hover {
+      background-color: #155d8b;
+    }
+
+    /* Active/selected view button (e.g., when you're in Month view) */
+    .fc .fc-button-active {
+      background-color: #1d6886;  /* Highlight the active view */
+      color: white;
+    }
+
+    /* Override 'Today' button specifically */
+    .fc .fc-today-button {
+      background-color: #2ca02c;
+      color: white;
+    }
+
+    .fc .fc-today-button:hover {
+      background-color: #1e7a1e;
     }
 
     #calendar {
       max-width: 900px;
       margin: 0 auto;
-      background-color: white;
+      background-color: #fff;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     }
 
     #legend {
@@ -34,16 +70,74 @@
       display: inline-block;
       margin-right: 10px;
       margin-bottom: 10px;
-      padding: 5px 10px;
-      border-radius: 5px;
+      padding: 6px 12px;
+      border-radius: 4px;
       color: white;
       font-size: 14px;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 10;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 30px;
+      border-radius: 10px;
+      width: 50%;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #888;
+    }
+
+    .close:hover {
+      color: #000;
+    }
+
+    #eventTitle {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    #eventDetails {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    #eventLink {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #1d6886;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    #eventLink:hover {
+      background-color: #155d8b;
     }
   </style>
 </head>
 <body>
 
-  <h1 style="text-align: center;">Events Calendar</h1>
+  <h1>Events Calendar</h1>
 
   <div id="calendar"></div>
 
@@ -59,12 +153,36 @@
     </div>
   </div>
 
+  <div id="eventModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="eventTitle"></h2>
+      <p id="eventDetails"></p>
+      <a id="eventLink" href="#" target="_blank">More Info</a>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
   <script>
+    const eventColors = {
+      "Workshop": "#1f77b4",
+      "Training event": "#ff7f0e",
+      "Conference": "#2ca02c",
+      "Tutorial": "#d62728",
+      "Demo": "#9467bd",
+      "Webinar": "#17becf"
+    };
+
     document.addEventListener('DOMContentLoaded', function () {
       fetch('events.json')
         .then(response => response.json())
-        .then(events => {
+        .then(data => {
+          // Assign color based on event type
+          const events = data.map(event => ({
+            ...event,
+            color: eventColors[event.type] || '#999'
+          }));
+
           const calendarEl = document.getElementById('calendar');
           const calendar = new FullCalendar.Calendar(calendarEl, {
             initialView: 'dayGridMonth',
@@ -74,16 +192,34 @@
               right: 'dayGridMonth,timeGridWeek,listMonth'
             },
             events: events,
-            eventDisplay: 'block'
+            eventClick: function (info) {
+              info.jsEvent.preventDefault();
+
+              document.getElementById('eventTitle').textContent = info.event.title;
+              document.getElementById('eventDetails').textContent = info.event.extendedProps.description || 'No additional details.';
+              document.getElementById('eventLink').href = info.event.url || '#';
+
+              document.getElementById('eventModal').style.display = 'block';
+            }
           });
+
           calendar.render();
+
+          document.querySelector('.close').addEventListener('click', function () {
+            document.getElementById('eventModal').style.display = 'none';
+          });
+
+          window.addEventListener('click', function (event) {
+            if (event.target === document.getElementById('eventModal')) {
+              document.getElementById('eventModal').style.display = 'none';
+            }
+          });
         })
         .catch(error => {
           console.error("Error loading events.json:", error);
         });
     });
   </script>
-
 </body>
 </html>
 
